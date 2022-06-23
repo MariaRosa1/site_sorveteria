@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="../style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/contato.css">
+
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="../img/logo.png" alt="logo" class="logo">
-            <p class="link">Ice</p>
+  <header id="header">
+    <a class="logo" href=""> <img src="../img/logo.png" alt="logo" class="logo">Ice</a>
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu">
+        <li><a href="sabores.html" class="link">Sabores</a></li>
+        <li><a href="contato.html" class="link">Contato</a></li>
+        <li><a href="sobre.html" class="link">Sobre nós</a></li>
+        <li><a href="../index.html" class="link">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="containers-contato">
+    <div class="cont-contato">
+      <div class="contato">
+        <!-- contato -->
+        <div class="con">
+          <div>
+            <h1>Contato</h1>
+          </div>
+          <div>
+            <p class="p-contato"> E-mail: contato@ice.com</p>
+            <p class="p-contato">Telefone:(00)00000-0000</p>
+            <p class=>Endereço: Rua aaaaaa, 1903</p>
+            <p>Jardim Eucaliptos</p>
+            <p>Mogi Guaçu/SP</p>
+          </div>
         </div>
-        <ul class="menu">
-            <li><a href="sabores.html" class="link">Sabores</a></li>
-            <li><a href="" class="link">Contato</a></li>
-            <li><a href="sobre.html" class="link">Sobre nós</a></li>
-            <li><a href="../index.html" class="link">Sair</a></li>
-        </ul>
-    </header>
 
-    <main style="font-size: 70px">EM CONSTRUÇÃO KKKKKKKKKK</main>
+        <!-- mapa -->
+        <div class="map">
+          <img class="img-contato" src="../img/maps.svg" alt="mapa" srcset="">
+        </div>
 
+        <!-- fale conosco -->
+        <div class="fale-conosco">
+          <section>
+            <h2>Fale conosco</h2>
+            <form action="#">
+              <div class="forms-contato">
+                <label for="email-contato">Email: </label>
+                <input type="email" id="email-contato">
+              </div>
+              <div class="forms-contato">
+                <label for="msg-contato">Mensagem: </label>
+                <textarea name="" id="msg-contato" cols="30" rows="10"></textarea>
+              </div>
+
+              <div class="button-fale forms-contato">
+                <div> 
+                  <input class="reset-sub-fale" type="reset" value="Limpar">
+                </div>
+                <div>
+                  <input class="reset-sub-fale" type="submit" value="Enviar">
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
 </body>
+
 </html>

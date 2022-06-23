@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/sign.css">
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../img/logo.png" alt="logo" class="logo" >
-            <p class="link">Ice</p>
-        </div>
-        <ul class="menu">
-            <li><a href="" class="link">Início</a></li>
-            <li><a href="" class="link">Contato</a></li>
-            <li><a href="" class="link">Sobre nós</a></li>
-        </ul>
+    <header id="header">
+        <a class="logo" href=""> <img src="../img/logo.png" alt="logo" class="logo" >Ice</a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="sabores.html" class="link">Sabores</a></li>
+            <li><a href="contato.html" class="link">Contato</a></li>
+            <li><a href="sobre.html" class="link">Sobre nós</a></li>
+            <li><a href="../index.html" class="link">Sair</a></li>
+          </ul>
+        </nav>
     </header>
 
     <main class="cont-log">
@@ -26,7 +29,7 @@
             <form action="sabores.html">
                 <h1 id="sign">Log In</h1>
                 <div class="group-forms">
-                    <button>Sign in with Google</button>
+                    <button>Log in with Google</button>
                 </div>
                 <div class="group-forms">
                     <label for="email">E-mail:</label>
@@ -40,7 +43,7 @@
                     <p class="esqueceu-senha">Esqueceu sua senha?</p>
                 </div>
                 <div class="group-forms">
-                    <input class="group-forms" type="submit" id="enviar" value="Sign In">
+                    <input class="group-forms" type="submit" id="enviar" value="Log In">
                 </div>
                
             </form>
@@ -48,5 +51,7 @@
         </div>
 
     </main>
+
+    <script src="../script.js"></script>
 </body>
 </html>

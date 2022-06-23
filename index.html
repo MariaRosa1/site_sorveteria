@@ -9,17 +9,20 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo" class="logo" >
-            <p class="link">Ice</p>
-        </div>
-        <ul class="menu">
-            <li><a href="" class="link">Início</a></li>
-            <li><a href="" class="link">Contato</a></li>
-            <li><a href="" class="link">Sobre nós</a></li>
-        </ul>
-    </header>
+    <header id="header">
+        <a class="logo" href="img/logo.png"> <img src="img/logo.png" alt="logo" class="logo" >Ice</a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="./index.html" class="link">Início</a></li>
+            <li><a href="./arq/contato.html" class="link">Contato</a></li>
+            <li><a href="./arq/sobre.html" class="link">Sobre nós</a></li>
+          </ul>
+        </nav>
+      </header>
+
 
 
     <div class="conthome">
@@ -41,6 +44,6 @@
         </div>
     </div>
 
-
+    <script src="./script.js"></script>
 </body>
 </html>
