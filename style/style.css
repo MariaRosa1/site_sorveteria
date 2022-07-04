@@ -569,7 +569,7 @@ img{
     }
     
     .contato{
-        margin: 0px 50px;
+        margin: 0px 10px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: "a a"
@@ -636,8 +636,8 @@ img{
 
     .content1 p {
         width: 300px;
-        font-size: 25px;
-        padding: 10px 0;
+        font-size: 24px;
+        padding: 10px 10px;
 
     }
 
@@ -659,9 +659,6 @@ img{
 }
 
 @media (max-width: 700px) {
-
-
-
 
     /* SOBRE */
     .cont-sobre{ 
